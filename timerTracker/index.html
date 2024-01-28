@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="app.css" />
+    <title>Timer Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Timer Tracker</h1>
+      <small>Focus and Track your time</small>
+
+      <p>Here should allow user set time</p>
+      <form>
+        <div class="timer-container">
+          <input
+            type="number"
+            id="mintues"
+            placeholder="hours"
+            min="0"
+            max="24"
+          />
+          <label for="hours">H</label>
+
+          <input
+            type="number"
+            id="mintues"
+            placeholder="mintues"
+            min="0"
+            max="59"
+          />
+          <label for="mintues">M</label>
+
+          <input
+            type="number"
+            id="seconds"
+            placeholder="mintues"
+            min="0"
+            max="59"
+          />
+          <label for="seconds">S</label>
+        </div>
+
+        <div class="category-container">
+          <label for="name">What you want to focus on?</label>
+
+          <input type="text" required minlength="4" maxlength="8" size="10" />
+        </div>
+
+        <div class="btn-container">
+          <button class="start-btn" onclick="newFocus()">Start</button>
+          <button class="stop-btn" onclick="stopFocus()">Stop</button>
+          <button class="restart-btn" onclick="Restart()">Restart</button>
+        </div>
+      </form>
+
+      <div class="display-container">
+        Total focus
+        <ul>
+          <li>coding: Time</li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
